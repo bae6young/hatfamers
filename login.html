@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hat Fammers</title>
+
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <!--파비콘 링크-->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <!--웹폰트 링크, 프리텐다드-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!--슬라이드 링크-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--aos 링크-->
+
+    <link rel="stylesheet" href="./css/style.css">
+    <!--공통 css링크-->
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div id="header">
+        <div class="header_inner">
+            <div class="logo"><a href="./index.html"><img src="./images/logo.png" alt="햇파머스 로고 이미지"></a></div>
+            <ul class="gnb gnb_left">
+                <li><a href="./shop.html">쇼핑</a></li>
+                <li><a href="./news.html">소식</a></li>
+                <li><a href="./story.html">스토리</a></li>
+            </ul>
+            <ul class="gnb gnb_right">
+                <li><a href="./contact.html">영업문의</a></li>
+                <li><a href="./faq.html">고객지원</a></li>
+            </ul>
+        </div><!--header_inner-->
+    </div>
+    <!--header-->
+
+    <div id="main">
+        <div class="login_box">
+            <h2>로그인</h2>
+            <form class="contact_text" action="#" name="contact">
+                <ul>
+                    <li class="question">
+                        <input type="text" required/>
+                        <label>아이디</label>
+                    </li>
+                    <li class="question">
+                        <input type="text" required/>
+                        <label>비밀번호</label>
+                    </li>
+                    <li class="id">
+                        <input type="checkbox" name="아이디 저장"/>
+                        <label>아이디 저장</label>
+                    </li>
+                </ul>
+                <div class="more_btn_box">
+                    <button class="more_btn"type="submit">로그인</button>
+                </div>
+            </form>
+            <ol>
+                <li><a href="#">아이디 찾기</a></li>
+                <li><a href="#">비밀번호 찾기</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ol>
+            <ul class="icon">
+                <li><a href="#"><img src="./images/shop/icon_naver.png" alt="네이버 로고"></a></li>
+                <li><a href="#"><img src="./images/shop/icon_kakao.png" alt="카카오 로고"></a></li>
+            </ul>
+            <p class="gray">더 편하게 가입할 수 있습니다.</p>
+        </div><!--login_box-->
+    </div><!--main-->
+
+    <div id="footer">
+        <div class="footer_logo"><img src="./images/logo_symbol.png" alt="햇파머스 심볼"></div>
+        <div class="footer_text">
+            <ul>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">회사소개</a></li>
+            </ul>
+            <p>
+                대표자 : ○○○ㅣ 사업자 등록번호 : 000-00-0000 <br>
+                주소 : ○○도 ○○시 ○○○구 ○○로 000-00 ㅣ EMAIL : hatfamers@gmail.com ㅣ TEL : 010-1234-5678 ㅣ FAX : 000-000-0000 <br>
+                Copyright © 2024 HAT FAMERS. All rights reserved.
+            </p>
+        </div>
+            <ol>
+                <li><a href="#"><img src="./images/icon_instar.png" alt="인스타 아이콘"></a></li>
+                <li><a href="#"><img src="./images/icon_kakao.png" alt="카카오톡 아이콘"></a></li>
+            </ol>
+    </div>
+    <!--footer-->
+
+
+    <div class="popup">
+        <div class="popup_inner">
+          <p class="pop_text">준비중입니다.</p>
+          <p class="close">X</p>
+        </div>
+      </div><!--popup-->
+
+        <!--aos-->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+<script src="./js/jquery-3.7.1.min.js"></script>
+<script src="./js/script.js"></script><!--공통-->
+<script src="./js/login.js"></script>
+
+
+</body>
+</html>

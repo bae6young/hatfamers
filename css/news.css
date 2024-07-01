@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+#title{
+    background-image: url(../images/news/bg_title.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#title h1{
+    color: #fff;
+    font-size: 50px;
+}
+/*main*/
+#main{
+    width: 1320px;
+    margin: 100px auto;
+}
+
+.tabs{
+    display: flex;
+    margin-bottom: 45px;
+    justify-content: center;
+}
+.tabs li{
+    font-weight: bold;
+    font-size: 20px;
+}
+.tabs li:nth-child(2){
+    margin: 0 55px;
+}
+.tabs li::after{
+    display:block;
+  content: '';
+  border-bottom: solid 3px #9ac76f;  
+  transform: scaleX(0);  
+  transition: transform 0.1s ease-in-out;
+}
+.tabs li:hover::after{
+    transform: scaleX(1); 
+}
+.active a{
+    color: #9ac76f;
+}
+
+/*tab - notice*/
+.notice{
+    border-top: 2px solid #707070;
+    border-bottom: 2px solid #707070;
+}
+.notice li{
+    border-bottom: 1px solid #707070;
+    padding: 40px 0;
+    padding-left: 60px;
+    display: flex;
+    font-size: 20px;
+}
+.day{
+    padding-right: 45px;
+}
+.notice li a:hover{
+    text-decoration: underline;
+}
+/*tab -event*/
+.event_tabs{
+    display: flex;
+    margin-bottom: 45px;
+    justify-content: center;
+}
+.event_tabs li{
+    font-weight: bold;
+    font-size: 18px;
+}
+.event_tabs li:nth-child(2){
+    margin: 0 55px;
+}
+.event_tabs li::after{
+    display:block;
+  content: '';
+  border-bottom: solid 3px #9ac76f;  
+  transform: scaleX(0);  
+  transition: transform 0.1s ease-in-out;
+}
+.event_tabs li:hover::after{
+    transform: scaleX(1); 
+}
+.event_box{
+    width: 1050px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.event_box li{
+    padding-bottom: 45px;
+    font-size: 18px;
+}
+.event_box li:nth-child(odd){
+    padding-right: 40px;
+}
+.event_box li img{
+    border-radius: 0 180px 0 0;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 5px 3px rgba(0,0,0,0.2));
+    border-left: 0px solid #9ac76f;
+}
+
+.event_box li:hover img{
+    border-left: 10px solid #9ac76f;
+    
+}

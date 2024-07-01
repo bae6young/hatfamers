@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+/*title*/
+#title{
+    background-image: url(../images/contact/bg_title.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 430px;
+}
+#title h1{
+    display: block;
+    width: 1320px;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 50px;
+    padding-top: 78px;
+}
+
+/*main*/
+#main{
+    width: 1320px;
+    margin: 0 auto;
+    
+}
+.contact_box{
+    background: #ffffff;
+    border-radius: 170px 0 170px 0;
+    overflow: hidden;
+    filter: drop-shadow(0px 5px 5px rgba(0,0,0,0.3));
+    display: flex;
+    transform: translateY(-215px);
+}
+.contsct_map{
+    width: 660px;
+}
+.contact_text{
+    width: 660px;
+    box-sizing: border-box;
+    padding: 60px;
+    position: relative;
+}
+/*인폼 꾸미기*/
+.question{
+    position: relative;
+    padding: 15px 0;
+}
+
+.question:last-child{
+    padding-bottom: 30px;
+}
+
+.question input, .question textarea{
+    border: 1px solid #9ac76f;
+    display: block;
+    padding: 13px 15px;
+    font-size: 16px;
+    border-radius: 23px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    color: #9ac76f;
+    transition: all 0.3s;
+}
+.question textarea{
+    width: 540px;
+    height: 100px;
+    resize: none;
+}
+
+.question input:focus, .question textarea:focus{
+    outline:none;
+    background: #9ac76f;
+    color: #fff;
+    margin-top: 30px;
+}
+.question input:valid, .question textarea:valid{
+    margin-top: 30px;
+}
+
+.question label{
+    color: #9ac76f;
+    display: block;
+    padding: 22px 15px;
+    font-size: 20px;
+    font-weight: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+    transition: all 0.3s;
+}
+.question input:focus ~ label, .question textarea:focus ~ label{
+    top: -20px;
+    font-weight: bold;
+    color: #111;
+}
+.question input:valid ~ label, .question textarea:valid ~ label{
+    top: -10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #111;
+}
+
+.more_btn_box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.more_btn_box ol{
+    font-size: 18px;
+    position: relative;
+    width: 350PX;
+}
+.more_btn_box ol li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 200;
+    display: none;
+}
+.sus{
+    color: #9ac76f;
+}
+.false{
+    color: #f86a6a;
+}
+.more_btn{
+    display: inline-block;
+    padding: 10px 50px;
+    border: 1px solid #111;
+    border-radius: 50px;
+    font-size: 20px;
+    position: relative;
+    transition : .2s transform ease-in-out;
+    will-change : transform;
+    z-index : 0;
+    overflow: hidden;
+    background-color: #fff;
+}
+.more_btn::after{
+    background-color : #9ac76f;
+    border-radius : 3rem;
+    content : '';
+    display : block;
+    height : 100%;
+    width : 100%;
+    position : absolute;
+    left : 0;
+    top : 0;
+    transform : translate(-100%, 0) rotate(10deg);
+    transform-origin : top left;
+    transition : .2s transform ease-out;
+    will-change : transform;
+    z-index : -1;
+}
+    
+.more_btn:hover::after{
+    transform : translate(0, 0);
+}
+    
+.more_btn:hover{
+    border : 1px solid transparent;
+    color : #fff;
+    transform : scale(1.05);
+    will-change : transform;
+}
