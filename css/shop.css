@@ -74,9 +74,11 @@
 }
 .best_box ul li img{
     padding-bottom: 10px;
+    width: 100%;
 }
 .best_box ul li{
     padding-bottom: 30px;
+    width: 250px;
 }
 .price{
     font-size: 14px;
