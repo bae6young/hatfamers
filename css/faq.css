@@ -104,6 +104,7 @@
     background-position: center center;
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 .center_inner{
     width: 1320px;
