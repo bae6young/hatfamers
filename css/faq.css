@@ -100,6 +100,8 @@
     height: 720px;
     background-image: url(../images/faq/bg_faq.jpg);
     background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
     display: flex;
     align-items: center;
 }
